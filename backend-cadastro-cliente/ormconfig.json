@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "host.docker.internal",
+  "port": 15432,
+  "username": "postgres",
+  "password": "963852741",
+  "database": "register",
+  "entities": ["./src/modules/**/typeorm/entities/*.ts"],
+  "synchronize": true,
+  "migrations": ["./src/shared/typeorm/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/shared/typeorm/migrations"
+  },
+  "logging": false,
+  "schema": "public"
+}
